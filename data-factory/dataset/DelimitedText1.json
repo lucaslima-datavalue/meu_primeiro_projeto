@@ -1,0 +1,46 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"par_nomearquivo": {
+				"type": "String",
+				"defaultValue": "tb_olist_orders.csv"
+			},
+			"par_diretorio": {
+				"type": "String"
+			},
+			"par_container": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().par_nomearquivo",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().par_diretorio",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().par_container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\"",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
