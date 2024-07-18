@@ -1,0 +1,9 @@
+{
+	"name": "AcademyADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b698bf17-ea74-4f96-b5ab-14c01cd70d78",
+		"tenantId": "a86fdef9-2164-4f12-91c0-f6e1337190da"
+	}
+}
