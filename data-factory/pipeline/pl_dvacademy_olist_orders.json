@@ -251,6 +251,9 @@
 				"defaultValue": "tb_olist_orders"
 			}
 		},
+		"folder": {
+			"name": "OlistDataFlow"
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-05-03T01:17:57Z"
 	},
