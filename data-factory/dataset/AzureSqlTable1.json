@@ -53,7 +53,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "tb_olist_orders"
+			"table": "Depara_Extrato"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
