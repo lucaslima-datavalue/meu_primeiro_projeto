@@ -5,6 +5,11 @@
 			"referenceName": "AzureSqlDatabase1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"par_tabela_origem": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
@@ -53,7 +58,10 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Depara_Extrato"
+			"table": {
+				"value": "@dataset().par_tabela_origem",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
